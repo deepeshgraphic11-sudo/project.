@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+    transition:0.3s;
+}
+
+/* LIGHT MODE */
+.light{
+    background:white;
+    color:black;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    background:#020617;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:50px;
+    background:linear-gradient(45deg,#ff6a00,#ee0979);
+    animation:move 6s infinite alternate;
+}
+
+/* CONTAINER */
+.container{
+    padding:20px;
+    text-align:center;
+}
+
+/* COLORS */
+#colors input{
+    width:50px;
+    height:50px;
+    margin:5px;
+    border:none;
+}
+
+/* OUTPUT */
+#output{
+    width:320px;
+    height:200px;
+    margin:20px auto;
+    border-radius:15px;
+    background:linear-gradient(45deg,red,blue);
+    background-size:cover;
+}
+
+/* BUTTONS */
+button{
+    padding:8px 12px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* TEXTAREA */
+textarea{
+    width:90%;
+    height:80px;
+}
+
+/* HISTORY */
+#history div{
+    width:60px;
+    height:40px;
+    display:inline-block;
+    margin:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* PALETTE */
+#palette div{
+    width:60px;
+    height:60px;
+    display:inline-block;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:black;
+}
+
+/* ANIMATION */
+@keyframes move{
+    0%{background:linear-gradient(45deg,#ff6a00,#ee0979);}
+    100%{background:linear-gradient(45deg,#00c6ff,#0072ff);}
+}
