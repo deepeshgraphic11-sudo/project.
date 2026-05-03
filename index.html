@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Earth Pro Max</title>
+<link rel="stylesheet" href="earth.css">
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>🌈 Color Earth Pro Max</h2>
+    <button onclick="toggleMode()">🌙</button>
+</nav>
+
+<section class="hero">
+    <h1>Ultimate Gradient Generator</h1>
+    <p>Create • Customize • Download</p>
+    <button onclick="scrollToGen()">Start</button>
+</section>
+
+<section id="generator" class="generator">
+
+    <div id="colors"></div>
+    <button onclick="addColor()">+ Add Color</button>
+
+    <div class="controls">
+        <label>Angle: <span id="angleValue">45</span>°</label>
+        <input type="range" id="angle" min="0" max="360" value="45">
+
+        <select id="type">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+        </select>
+    </div>
+
+    <div class="buttons">
+        <button onclick="generate()">Generate</button>
+        <button onclick="randomGradient()">Random</button>
+        <button onclick="copyCSS()">Copy</button>
+        <button onclick="downloadImage()">Download</button>
+    </div>
+
+    <input type="file" id="imageUpload">
+
+    <div id="output"></div>
+    <textarea id="cssCode" readonly></textarea>
+
+    <h3>History</h3>
+    <div id="history"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 Color Earth Pro </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
